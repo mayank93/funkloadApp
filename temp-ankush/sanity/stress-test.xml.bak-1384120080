@@ -1,0 +1,2 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/admin/default/edit/welcome/static/css/web2py.css" code="200" description="Get url" time="1384120080.85" duration="0.010185956955" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384120080.85" result="Successful" steps="1" duration="0.0111000537872" connection_duration="0.010185956955" requests="1" pages="1" xmlrpc="0" redirects="0" images="0" links="0" />

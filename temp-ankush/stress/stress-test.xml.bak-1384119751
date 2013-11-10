@@ -1,0 +1,3 @@
+<response cycle="001" cvus="000" thread="001" suite="Stress" name="test_stress" step="001" number="001" type="get" result="Successful" url="" code="200" description="Get url" time="1384119725.58" duration="0.00113201141357" />
+<response cycle="001" cvus="000" thread="001" suite="Stress" name="test_stress" step="002" number="001" type="get" result="Successful" url="" code="200" description="Get url" time="1384119725.59" duration="0.00161290168762" />
+<testResult cycle="001" cvus="000" thread="001" suite="Stress" name="test_stress"  time="1384119725.58" result="Successful" steps="2" duration="0.00435209274292" connection_duration="0.0027449131012" requests="2" pages="2" xmlrpc="0" redirects="0" images="0" links="0" />

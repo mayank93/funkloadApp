@@ -1,0 +1,8 @@
+set output "/home/mayank/temp-ankush/stress/test_stress-20131111T005925/tests.png"
+set title "Successful Tests Per Second"
+set terminal png size 640,540
+set xlabel "Concurrent Users"
+set ylabel "Test/s"
+set grid back
+#set xrange [0:11]
+plot "/home/mayank/temp-ankush/stress/test_stress-20131111T005925/tests.data" u :2:xticlabels(1) w linespoints lw 2 lt 2 t "STPS"
