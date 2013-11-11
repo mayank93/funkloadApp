@@ -1,0 +1,2 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/Syllabus-Electives-M2011.pdf" code="200" description="Get url" time="1384111998.59" duration="0.240987062454" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384111998.59" result="Successful" steps="1" duration="0.242057800293" connection_duration="0.240987062454" requests="1" pages="1" xmlrpc="0" redirects="0" images="0" links="0" />

@@ -1,0 +1,16 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Failure" url="/FunkLoad/FunkLoad/static/css/compiled/signin.css" code="404" description="Get url" time="1384118279.8" duration="0.0225410461426">
+  <headers>
+    <header name="content-length" value="594" />
+    <header name="set-cookie" value="session_id_funkload=10.1.33.107-efab8be0-1c23-4053-ba9d-3e6af75c87ec; Path=/" />
+    <header name="server" value="Rocket 1.2.4 Python/2.7.4" />
+    <header name="connection" value="close" />
+    <header name="web2py_error" value="invalid controller (FunkLoad/static)" />
+    <header name="date" value="Sun, 10 Nov 2013 21:17:59 GMT" />
+    <header name="content-type" value="text/html; charset=UTF-8" />
+  </headers>
+  <body><![CDATA[
+<html><body><h1>invalid controller (FunkLoad/static)</h1></body></html><!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx //-->
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384118279.8" result="Failure" steps="1" duration="0.0239729881287" connection_duration="0.0225410461426" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback="Traceback (most recent call last):&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 946, in __call__&#10;    testMethod()&#10;   File &quot;/home/mayank/temp-ankush/sanity/test_Sanity.py&quot;, line 23, in test_sanity&#10;    self.get(self.server_url, description='Get url')&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 391, in get&#10;    method=&quot;get&quot;, load_auto_links=load_auto_links)&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: /FunkLoad/FunkLoad/static/css/compiled/signin.css&#10;HTTP Response 404: NOT FOUND&#10;" />

@@ -1,0 +1,24 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/con_reportgradesm09.htm" code="200" description="Get url" time="1384118300.24" duration="0.0224509239197" />
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="002" type="link" result="Failure" url="/Consilidated%20Report%20of%20Grades%20-%20Monsoon%202009_files/filelist.xml" code="404" description="" time="1384118300.26" duration="0.00584411621094">
+  <headers>
+    <header name="date" value="Sun, 10 Nov 2013 21:18:46 GMT" />
+    <header name="content-length" value="345" />
+    <header name="content-type" value="text/html; charset=iso-8859-1" />
+    <header name="connection" value="close" />
+    <header name="server" value="Apache/2.2.3 (CentOS)" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /Consilidated Report of Grades - Monsoon 2009_files/filelist.xml was not found on this server.</p>
+<hr>
+<address>Apache/2.2.3 (CentOS) Server at intranet.iiit.ac.in Port 80</address>
+</body></html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384118300.24" result="Failure" steps="1" duration="0.0305819511414" connection_duration="0.0224509239197" requests="2" pages="1" xmlrpc="0" redirects="0" images="0" links="0" traceback="Traceback (most recent call last):&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 946, in __call__&#10;    testMethod()&#10;   File &quot;/home/mayank/temp-ankush/testing/sanity/test_Sanity.py&quot;, line 23, in test_sanity&#10;    self.get(self.server_url, description='Get url')&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 391, in get&#10;    method=&quot;get&quot;, load_auto_links=load_auto_links)&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 348, in _browse&#10;    raise self.failureException, str(error)&#10; AssertionError: ERROR: /Consilidated%20Report%20of%20Grades%20-%20Monsoon%202009_files/filelist.xml&#10;HTTP Response 404: Not Found&#10;" />

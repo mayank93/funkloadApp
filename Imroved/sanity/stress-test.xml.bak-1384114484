@@ -1,0 +1,2 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/UG1-Tutorial-Lab-Schedule-M13.pdf" code="200" description="Get url" time="1384114484.8" duration="0.0116949081421" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384114484.8" result="Successful" steps="1" duration="0.0124418735504" connection_duration="0.0116949081421" requests="1" pages="1" xmlrpc="0" redirects="0" images="0" links="0" />
