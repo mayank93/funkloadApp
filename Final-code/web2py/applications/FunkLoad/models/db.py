@@ -4,7 +4,7 @@
 ## File is released under public domain and you can use without limitations
 #########################################################################
 
-host='http://10.1.33.107:8000/'
+host='http://10.1.33.107:8000'
 mysqlHost='localhost'
 mysqlUser='root'
 mysqlDB='funkLoad'
@@ -61,7 +61,7 @@ auth.settings.registration_requires_verification = True
 auth.messages.verify_email = 'Click on the link '+ host + URL(r=request,c='default',f='user',args=['verify_email'])+'/%(key)s to verify your email'
 auth.settings.registration_requires_approval = False
 auth.settings.reset_password_requires_verification = True
-auth.messages.reset_password = 'Click on the link '+ host + URL(r=request,c='default',f='user',args=['reset_password']) +     '/%(key)s to change password'
+auth.messages.reset_password = 'Click on the link '+ host + URL(r=request,c='default',f='user',args=['reset_password'])+'/%(key)s to change password'
 
 ## if you need to use OpenID, Facebook, MySpace, Twitter, Linkedin, etc.
 ## register with janrain.com, write your domain:api_key in private/janrain.key
