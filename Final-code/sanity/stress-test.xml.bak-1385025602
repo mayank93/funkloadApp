@@ -1,0 +1,2 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/UG1-Courses-TimeTable-S12.pdf" code="200" description="Get url" time="1385025602.71" duration="0.032735824585" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1385025602.71" result="Successful" steps="1" duration="0.033362865448" connection_duration="0.032735824585" requests="1" pages="1" xmlrpc="0" redirects="0" images="0" links="0" />

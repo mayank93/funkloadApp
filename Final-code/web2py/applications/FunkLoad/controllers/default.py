@@ -27,13 +27,13 @@ def index():
 def test():
 	tid=request.args[0]
 	print tid
-    	session.email=auth.user.email
-    	print session.email
+        session.email=auth.user.email
+        print session.email
 	details=db(db.TestDetails.id == tid).select()[0]
 	print details
 	functionalDetails=db(db.FunctionalTesting.TestId == tid).select()
 	stressDetails=str(tid)+'/index.html'
-    	return dict(details=details,stressDetails=stressDetails,functionalDetails=functionalDetails)
+        return dict(details=details,stressDetails=stressDetails,functionalDetails=functionalDetails)
 
 @auth.requires_login()
 def testDetails():

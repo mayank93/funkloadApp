@@ -46,24 +46,36 @@
 				{{=i.Description}}
                                     </td>
                                     <td>
+                                        {{ if i.SanityFlag == 'false' :}}
+				    		<span class="label label-info">N/A</span>
+                        {{else:}}
 				    	{{ if i.Status < '1' :}}
 				    		<span class="label label-info">InQueue</span>
 					{{else:}}
 				    		<span class="label label-success">Complete</span>
 					{{pass}}
+					{{pass}}
                                     </td>
                                     <td>
+                                        {{ if i.FunctionalFlag == 'false' :}}
+				    		<span class="label label-info">N/A</span>
+                        {{else:}}
 				    	{{ if i.Status < '2' :}}
 				    		<span class="label label-info">InQueue</span>
 					{{else:}}
 				    		<span class="label label-success">Complete</span>
 					{{pass}}
+					{{pass}}
                                     </td>
                                     <td>
+                                        {{ if i.StressFlag == 'false' :}}
+				    		<span class="label label-info">N/A</span>
+                        {{else:}}
 				    	{{ if i.Status < '3' :}}
 				    		<span class="label label-info">InQueue</span>
 					{{else:}}
 				    		<span class="label label-success">Complete</span>
+					{{pass}}
 					{{pass}}
                                     </td>
                                 </tr>

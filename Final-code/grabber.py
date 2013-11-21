@@ -8,7 +8,9 @@ def grabber(url):
         url = 'http://' + url
     handle = urllib2.urlopen(url)
     data = handle.read()
-    r = re.findall('href=\"(.*?)\"', data)
+    #r = re.findall('href=\"(.*?)\"', data)
+
+    r = re.findall('href *?= *?\"(.*?)\"', data)
     for i in r:
         if i is None:
             pass
@@ -21,5 +23,6 @@ def grabber(url):
 
 if __name__ == "__main__":
     TEST_URL = "intranet.iiit.ac.in"
+    #TEST_URL = "http://search.iiit.ac.in/courses/www/index.php"
     output = grabber(TEST_URL)
     print output

@@ -165,3 +165,95 @@ success!
 timestamp: 2013-11-10T22:22:32.034143
 ALTER TABLE TestDetails ADD functionalflag VARCHAR(255);
 success!
+timestamp: 2013-11-21T14:38:56.462477
+CREATE TABLE auth_user(
+    id INT AUTO_INCREMENT NOT NULL,
+    first_name VARCHAR(128),
+    last_name VARCHAR(128),
+    email VARCHAR(255),
+    password VARCHAR(255),
+    registration_key VARCHAR(255),
+    reset_password_key VARCHAR(255),
+    registration_id VARCHAR(255),
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2013-11-21T14:38:57.306154
+CREATE TABLE auth_group(
+    id INT AUTO_INCREMENT NOT NULL,
+    role VARCHAR(255),
+    description LONGTEXT,
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2013-11-21T14:38:57.465597
+CREATE TABLE auth_membership(
+    id INT AUTO_INCREMENT NOT NULL,
+    user_id INT, INDEX user_id__idx (user_id), FOREIGN KEY (user_id) REFERENCES auth_user (id) ON DELETE CASCADE,
+    group_id INT, INDEX group_id__idx (group_id), FOREIGN KEY (group_id) REFERENCES auth_group (id) ON DELETE CASCADE,
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2013-11-21T14:38:57.754555
+CREATE TABLE auth_permission(
+    id INT AUTO_INCREMENT NOT NULL,
+    group_id INT, INDEX group_id__idx (group_id), FOREIGN KEY (group_id) REFERENCES auth_group (id) ON DELETE CASCADE,
+    name VARCHAR(255),
+    table_name VARCHAR(255),
+    record_id INT,
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2013-11-21T14:38:57.935040
+CREATE TABLE auth_event(
+    id INT AUTO_INCREMENT NOT NULL,
+    time_stamp DATETIME,
+    client_ip VARCHAR(255),
+    user_id INT, INDEX user_id__idx (user_id), FOREIGN KEY (user_id) REFERENCES auth_user (id) ON DELETE CASCADE,
+    origin VARCHAR(255),
+    description LONGTEXT,
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2013-11-21T14:38:58.112744
+CREATE TABLE auth_cas(
+    id INT AUTO_INCREMENT NOT NULL,
+    user_id INT, INDEX user_id__idx (user_id), FOREIGN KEY (user_id) REFERENCES auth_user (id) ON DELETE CASCADE,
+    created_on DATETIME,
+    service VARCHAR(255),
+    ticket VARCHAR(255),
+    renew CHAR(1),
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2013-11-21T14:38:58.272265
+CREATE TABLE TestDetails(
+    id INT AUTO_INCREMENT NOT NULL,
+    TestName VARCHAR(255),
+    Description LONGTEXT,
+    UserEmail VARCHAR(255),
+    MailSent VARCHAR(255),
+    SanityFlag VARCHAR(255),
+    StressFlag VARCHAR(255),
+    FunctionalFlag VARCHAR(255),
+    Status VARCHAR(255),
+    Url VARCHAR(255),
+    CycleDuration VARCHAR(255),
+    CycleUser VARCHAR(255),
+    CycleSleepTime VARCHAR(255),
+    RequestPerUser VARCHAR(255),
+    Sanity VARCHAR(255),
+    Functional VARCHAR(255),
+    path VARCHAR(255),
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2013-11-21T14:38:58.447818
+CREATE TABLE FunctionalTesting(
+    id INT AUTO_INCREMENT NOT NULL,
+    TestId INT, INDEX TestId__idx (TestId), FOREIGN KEY (TestId) REFERENCES TestDetails (id) ON DELETE CASCADE,
+    Url VARCHAR(255),
+    Status VARCHAR(255),
+    PRIMARY KEY(id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!

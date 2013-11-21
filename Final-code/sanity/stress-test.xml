@@ -1,45 +1,6 @@
-<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Failure" url="//css/fonts.css" code="404" description="Get url" time="1384121065.57" duration="0.00460910797119">
-  <headers>
-    <header name="content-length" value="1329" />
-    <header name="accept-ranges" value="bytes" />
-    <header name="vary" value="Accept-Encoding" />
-    <header name="server" value="Apache" />
-    <header name="last-modified" value="Thu, 03 Jan 2013 15:48:47 GMT" />
-    <header name="connection" value="close" />
-    <header name="etag" value='"62634-531-4d2644c70ad82;4ea0785cc4053"' />
-    <header name="cache-control" value="must-revalidate" />
-    <header name="date" value="Sun, 10 Nov 2013 22:04:25 GMT" />
-    <header name="content-type" value="text/html; charset=UTF-8" />
-  </headers>
-  <body><![CDATA[
-<!DOCTYPE html>
-<style type="text/css">
-a:link {color:blue;}
-a:visited {color:blue;}
-a:hover {text-decoration: none; color:blue; font-weight:bold;}
-a:active {color:blue;text-decoration: none}
-</style>
-<head><title>404 - Felicity 2012</title></head>
-<body style="background-color:black;">
-	<div style="width:100%; height:100%; margin-top:10px; font-size:large; color:green; text-align:center">
-		The Server Seems To Have Lost Your File<br/>
-		You might want to go to our <a href="/">HOME PAGE</a> if your are lost. Or you might want to go back to the <a href="javascript:history.back(-1);">PREVIOUS PAGE</a>
-	</div>
-	<div style="width:100%;position:absolute;top:70px;text-align:center">
-	    <img src="/static/error/tbservers.png" />
-	</div>
-	<div style="width:100%;position:absolute;top:390px;text-align:center;font-size:large;color:green">
-		The Tumble Beasts were porbably hungry and ate our page. We are sorry that we forgot to feed them<br/>
-		We will take extra care to feed our server guardians in the future
-	</div>
-	<div style="position:absolute; bottom:0; left:0; width:100%; text-align:center; font-size:large; color:green;">
-		<br/>Tumble Beasts were adopted from : <a href="http://theoatmeal.com/">The Oatmeal</a> 
-	</div>
-</body>
-<script type="text/javascript" src="/static/js/google/analytics.js"></script>
-</html>
-
-]]>
-  </body>
-</response>
-<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384121065.57" result="Failure" steps="1" duration="0.0061149597168" connection_duration="0.00460910797119" requests="1" pages="0" xmlrpc="0" redirects="0" images="0" links="0" traceback="Traceback (most recent call last):&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 946, in __call__&#10;    testMethod()&#10;   File &quot;/home/mayank/temp-ankush/sanity/test_Sanity.py&quot;, line 23, in test_sanity&#10;    self.get(self.server_url, description='Get url')&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 391, in get&#10;    method=&quot;get&quot;, load_auto_links=load_auto_links)&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 299, in _browse&#10;    response = self._connect(url, params, ok_codes, method, description)&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 216, in _connect&#10;    raise self.failureException, str(value.response)&#10; AssertionError: //css/fonts.css&#10;HTTP Response 404: Not Found&#10;" />
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/courses/www/index.php/courses/www/index.php?ctg=lessons" code="200" description="Get url" time="1385026729.05" duration="0.261232852936" />
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="002" type="link" result="Successful" url="/courses/www/themes/default/images/favicon.png" code="200" description="" time="1385026729.31" duration="0.0150129795074" />
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="003" type="link" result="Successful" url="/courses/www/themes/modern/css/css_global.css?build=11018" code="200" description="" time="1385026729.33" duration="0.035059928894" />
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="004" type="image" result="Successful" url="/courses/www/themes/default/images/logo/siel-logo-transparent.png" code="200" description="" time="1385026729.36" duration="0.027302980423" />
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="005" type="image" result="Successful" url="/courses/www/themes/default/images/others/transparent.gif" code="200" description="" time="1385026729.39" duration="0.0132229328156" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1385026729.05" result="Successful" steps="1" duration="0.374859809875" connection_duration="0.351831674576" requests="5" pages="1" xmlrpc="0" redirects="0" images="2" links="2" />

@@ -17,15 +17,21 @@ margin-right: 10px;
 </style>
 <div class="content">
     <div class="span10" style="margin:10px">
+        {{if details.SanityFlag=='true':}}
         <div class="span3">
             <a class="btn btn-success" type="button" data-toggle="collapse" href="#add-skills" onclick='toggle("#SanityTesting","#FunctionalTesting","#StressTesting")'>Sanity Result</a>
         </div>
+        {{pass}}
+        {{if details.FunctionalFlag=='true':}}
         <div class="span3">
             <a class="btn btn-success" type="button" data-toggle="collapse" href="#add-skills" onclick='toggle("#FunctionalTesting","#SanityTesting","#StressTesting")'>Functional Result</a>
         </div>
+        {{pass}}
+        {{if details.StressFlag=='true':}}
         <div class="span3">
 		<a class="btn btn-success" type="button" data-toggle="collapse" href="#add-skills" onclick='toggle("#StressTesting","#SanityTesting","#FunctionalTesting")'>Stress Result</a>
         </div>
+        {{pass}}
         <br/>
         <br/>
         <br/>

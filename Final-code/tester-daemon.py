@@ -8,11 +8,12 @@ import os
 import grabber
 import shutil
 
-db = sql.connect("localhost", "root", "root", "funkLoad")
+db = sql.connect("localhost", "root", "9501503484", "FunkLoad")
 c = db.cursor()
 db.autocommit(True)
 
-REP_BASE = "/home/mayank/Desktop/web2pyAdmin/web2py/web2py/applications/FunkLoad/static"
+#REP_BASE = "/home/mayank/Desktop/web2pyAdmin/web2py/web2py/applications/FunkLoad/static"
+REP_BASE = "/home/lordinvader/Studies/Presentation-day-code/web2py/applications/FunkLoad/static"
 
 def cleanup():
     print "Cleaning up..."
@@ -142,7 +143,9 @@ def stressTest(ID):
     print reportPath
     dstPath = REP_BASE + '/' +  str(ID)
     print dstPath
-    os.system("cp -r " + reportPath + " " + dstPath)
+    os.system("rm -r " + dstPath)
+    os.system("mkdir " + dstPath)
+    os.system("cp -r " + reportPath + "/* " + dstPath)
 
     query = "UPDATE TestDetails SET status = 3 where ID = %s" % (ID, )
     c.execute(query)
