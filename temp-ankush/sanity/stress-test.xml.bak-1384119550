@@ -1,0 +1,2 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/economy-of-permanence-kumarappa.pdf" code="200" description="Get url" time="1384119549.57" duration="1.28689599037" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384119549.57" result="Successful" steps="1" duration="1.28742909431" connection_duration="1.28689599037" requests="1" pages="1" xmlrpc="0" redirects="0" images="0" links="0" />

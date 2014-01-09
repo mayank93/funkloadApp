@@ -1,0 +1,2 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/Physical_Registration_Schedule_M2011.pdf" code="200" description="Get url" time="1384107686.82" duration="0.0233178138733" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384107686.82" result="Successful" steps="1" duration="0.0242209434509" connection_duration="0.0233178138733" requests="1" pages="1" xmlrpc="0" redirects="0" images="0" links="0" />

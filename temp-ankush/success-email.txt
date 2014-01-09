@@ -1,0 +1,17 @@
+Hi <user>
+
+Your test job (Test ID - #<ID number>) was completed successfully. You can view the report by clicking the following link:
+
+<Link to report>
+
+Cheers
+Team FunkloadApp
+
+--------------------------------------------------
+
+Hi <user>
+
+Your test job (Test ID - #<ID number>) encountered an unknown error. Please review the test parameters, or try submitting the request again.
+
+Cheers
+Team FunkloadApp

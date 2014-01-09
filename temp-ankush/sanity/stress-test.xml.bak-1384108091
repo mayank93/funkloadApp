@@ -1,0 +1,3 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/~quiz/index.htm" code="200" description="Get url" time="1384108091.86" duration="0.00623798370361" />
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="002" type="image" result="Successful" url="/~quiz/1.jpg" code="200" description="" time="1384108091.86" duration="0.00516796112061" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384108091.86" result="Successful" steps="1" duration="0.0150229930878" connection_duration="0.0114059448242" requests="2" pages="1" xmlrpc="0" redirects="0" images="1" links="0" />

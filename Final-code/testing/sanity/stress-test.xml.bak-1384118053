@@ -1,0 +1,24 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/retreat08/" code="200" description="Get url" time="1384118036.84" duration="0.015575170517" />
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="002" type="link" result="Failure" url="/retreat08/iiit.css" code="404" description="" time="1384118036.86" duration="0.00721883773804">
+  <headers>
+    <header name="date" value="Sun, 10 Nov 2013 21:14:22 GMT" />
+    <header name="content-length" value="300" />
+    <header name="content-type" value="text/html; charset=iso-8859-1" />
+    <header name="connection" value="close" />
+    <header name="server" value="Apache/2.2.3 (CentOS)" />
+  </headers>
+  <body><![CDATA[
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /retreat08/iiit.css was not found on this server.</p>
+<hr>
+<address>Apache/2.2.3 (CentOS) Server at intranet.iiit.ac.in Port 80</address>
+</body></html>
+
+]]>
+  </body>
+</response>
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384118036.84" result="Failure" steps="1" duration="0.0248520374298" connection_duration="0.015575170517" requests="2" pages="1" xmlrpc="0" redirects="0" images="0" links="0" traceback="Traceback (most recent call last):&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 946, in __call__&#10;    testMethod()&#10;   File &quot;/home/mayank/temp-ankush/testing/sanity/test_Sanity.py&quot;, line 23, in test_sanity&#10;    self.get(self.server_url, description='Get url')&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 391, in get&#10;    method=&quot;get&quot;, load_auto_links=load_auto_links)&#10;   File &quot;/usr/lib/python2.7/dist-packages/funkload/FunkLoadTestCase.py&quot;, line 348, in _browse&#10;    raise self.failureException, str(error)&#10; AssertionError: ERROR: /retreat08/iiit.css&#10;HTTP Response 404: Not Found&#10;" />

@@ -1,0 +1,3 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/ipc" code="301" description="Get url" time="1385025613.75" duration="0.0309982299805" />
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="002" type="get" result="Successful" url="/ipc/" code="200" description="" time="1385025613.78" duration="0.0272359848022" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1385025613.75" result="Successful" steps="1" duration="0.0610189437866" connection_duration="0.0582342147827" requests="2" pages="1" xmlrpc="0" redirects="1" images="0" links="0" />

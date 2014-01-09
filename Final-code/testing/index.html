@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>IIIT Hyderabad</title>
+        <link rel=stylesheet href="/themes/iiit-july-1/homePage/style_900.css" media="screen,print">
+    <link rel=stylesheet href="/themes/iiit-july-1/homePage/reset.css" media="screen,print">
+    <link rel="icon" type="image/ico" href="/files/favicon.ico" />
+    <script src="/themes/iiit-july-1/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <script type=text/javascript src="/themes/iiit-july-1/scripts/font.js"></script>
+<!-- Added for slider -->
+    <script type=text/javascript src="/themes/iiit-july-1/slider/box-jquery.js"></script>
+    <script type=text/javascript src="/themes/iiit-july-1/slider/slide.js"></script>
+    <link rel=stylesheet href="/themes/iiit-july-1/slider/styles.css" media="screen,print"> 
+<!-- Added for slider -->
+
+
+
+        <script type="text/javascript">
+      function ShowTabContent(tabNo) {
+        if(tabNo == "1") {
+          document.getElementById('tab_content').innerHTML ="<div style=\"position:absolute width:450px;height:195px;background-color:#ffffff;overflow:auto;\">"+"<ul>\
+<li><a href='http://iiit.ac.in/news/news/rajan_ndr'>Dr. K. S. Rajan has been nominated as a member of the Technical Committee for National Data Registry under National-GIS Project</a></li>\
+<li><a href='http://iiit.ac.in/news/news/iiith_foundation_day'>IIIT Hyderabad 16th Foundation Day - Press Note</a></li>\
+<li><a href='http://iiit.ac.in/news/news/polycom_iiith'>Polycom and IIIT-H enter into Collaborative Research Agreement for New Product Development</a></li>\
+<li><a href='http://iiit.ac.in/news/news/phdfellowship2013'> Two IIIT-H Students Yashaswi Verma and Rajvi Shah Receive Prestigious Microsoft Research India and Google India PhD Fellowship </a></li>\
+<li><a href='http://iiit.ac.in/news/news/mtechcaseeassy'>M.Tech CASE Students Won First Prize in IASTRUCTE - S C MEHROTRA Essay Competition</a></li>\
+<li><a href='http://iiit.ac.in/news/news/s_rawat_nhp'>Prof. Shatrunjay Rawat Appointed on Steering Committee for National Health Portal</a></li>\
+<li><a href='http://iiit.ac.in/news/news/neelima_satyam_jsps'>Dr. Neelima Satyam Selected for JSPS Invitation Fellowship for Research in Japan</a></li>\
+</ul>\
+<a id='more-items-link' href='http://iiit.ac.in/news/news' title='View More'>View More</a>"+"</div>";
+          document.getElementById('news_tab').className = "active";
+          document.getElementById('events_tab').className = "";
+          document.getElementById('notice_tab').className = "";
+          document.getElementById('fop_tab').className = "";
+        }
+        if(tabNo == "2") {
+          document.getElementById('tab_content').innerHTML = "<div style=\"position:absolute width:450px;height:195px;background-color:#ffffff;overflow:auto;\">"+"<ul>\
+<li><a href='http://iiit.ac.in/news/events/icon2013'>ICON 2013 - 18-20 December 2013</a></li>\
+<li><a href='http://iiit.ac.in/news/events/footballtourn2013'>4th A.P. Inter Engineering College Foot Ball Tournament -17th to 20th January 2013</a></li>\
+<li><a href='http://iiit.ac.in/news/events/ctcns2013'>Annual Symposium on Current Trends in Computational Natural Sciences 2013 - 17 Feb 2013</a></li>\
+<li><a href='http://iiit.ac.in/news/events/hvconf2013'>2nd International Conference on Human Values in Higher Education from 16 - 18 February 2013.</a></li>\
+<li><a href='http://iiit.ac.in/news/events/randd2013'>R & D Showcase - 9th and 10th February 2013</a></li>\
+<li><a href='http://iiit.ac.in/news/news/wisp_2012'>Workshop on Image and Speech Processing (WISP- 2012) - Monday, 17 December 2012</a></li>\
+<li><a href='http://iiit.ac.in/news/events/fsttcs2012'>IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science - Dec 15 to 17, 2012</a></li>\
+</ul>\
+<a id='more-items-link' href='http://iiit.ac.in/news/events' title='View More'>View More</a>"+"</div>";
+          document.getElementById('news_tab').className = "";
+          document.getElementById('events_tab').className = "active";
+          document.getElementById('notice_tab').className = "";
+          document.getElementById('fop_tab').className = "";
+        }
+        if(tabNo == "3") {
+          document.getElementById('tab_content').innerHTML = "<div style=\"position:absolute width:480px;height:165px;background-color:#ffffff;overflow:auto;\">"+"<ul>\
+<li><a href='http://iiit.ac.in/news/notice/pgssp'>PGSSP Admissions - Spring 2014 portal opens on 7th November 2013</a></li>\
+<li><a href='http://iiit.ac.in/news/notice/convocation2013'>Convocation 2013 - October 26, 2013</a></li>\
+<li><a href='http://iiit.ac.in/news/notice/vlead_freshers_drive'>Freshers Recruitment Drive - 15 September 2013 : VLEAD</a></li>\
+<li><a href='http://iiit.ac.in/news/notice/pgee_entrance_results'>PGEE/Lateral Entry/CLD and EHD Entrance Exam Results will be Announced on 20th May 2013</a></li>\
+<li><a href='http://iiit.ac.in/news/notice/lateral2013'>Admissions to Lateral Entry to Four Year Dual Degree Research Programmes</a></li>\
+<li><a href='http://iiit.ac.in/news/notice/cldehd2013'>Admissions to Five Year Dual Degree Programmes - CLD/EHD </a></li>\
+</ul>\
+<a id='more-items-link' href='http://iiit.ac.in/news/notices' title='View More'>View More</a>"+"</div>";
+          document.getElementById('news_tab').className = "";
+          document.getElementById('events_tab').className = "";
+          document.getElementById('notice_tab').className = "active";
+          document.getElementById('fop_tab').className = "";
+        }
+        if(tabNo == "4") {
+          document.getElementById('tab_content').innerHTML = "<p><br /></p>\
+        <p><a href='content/faculty-openings' title='Faculty Openings'>Faculty Jobs</a> </p><p><br /></p>\
+        <p><a href='content/staff-openings' title='Staff Openings'>Staff Jobs</a> </p><p><br /></p>\
+        <p><a href='content/project-openings' title='Project Openings'>Project Jobs</a></p><p><br /></p>\
+        <p><a href='content/other-openings' title='Other Openings'>Other Jobs</a></p>";
+          document.getElementById('news_tab').className = "";
+          document.getElementById('events_tab').className = "";
+          document.getElementById('notice_tab').className = "";
+          document.getElementById('fop_tab').className = "active";
+        }
+      }
+
+
+       
+ 
+
+     function showMenu(menuName) {
+	
+	if(menuName == "institute")
+	{
+		document.getElementById('sub_menu_institute').style.display = "block";
+		document.getElementById('sub_menu_acads').style.display = "none";
+		document.getElementById('sub_menu_research').style.display = "none";
+		document.getElementById('sub_menu_admissions').style.display = "none";
+    document.getElementById('sub_menu_people').style.display = "none";
+    document.getElementById('sub_menu_campuslife').style.display = "none";
+
+		document.getElementById('main_institute').style.background = "#EFF5FF";
+		document.getElementById('main_acads').style.background = "none";
+		document.getElementById('main_admissions').style.background = "none";
+		document.getElementById('main_research').style.background = "none";
+		document.getElementById('main_people').style.background = "none";
+    document.getElementById('main_campuslife').style.background = "none";
+    document.getElementById('main_media').style.background = "none";
+
+		document.getElementById('main_institute').style.color = "black";
+       
+     
+	}
+	else if (menuName == "acads")
+	{
+		document.getElementById('sub_menu_acads').style.display= "block";
+		document.getElementById('sub_menu_institute').style.display = "none";
+		document.getElementById('sub_menu_research').style.display = "none";
+		document.getElementById('sub_menu_admissions').style.display = "none";
+    document.getElementById('sub_menu_people').style.display = "none";
+    document.getElementById('sub_menu_campuslife').style.display = "none";
+
+     document.getElementById('main_institute').style.background = "none";
+        document.getElementById('main_acads').style.background = "#EFF5FF";
+        document.getElementById('main_admissions').style.background = "none";
+            document.getElementById('main_research').style.background = "none";
+            document.getElementById('main_people').style.background = "none";
+		document.getElementById('main_campuslife').style.background = "none";
+    document.getElementById('main_media').style.background = "none";
+//    document.getElementById('mImg').src="/themes/iiit-july-1/homePage/images/mImg2.jpg";
+		document.getElementById('main_acads').style.color = "black";
+
+	}
+	else if (menuName == "admissions")
+        {
+ 	        document.getElementById('sub_menu_acads').style.display= "none";
+                document.getElementById('sub_menu_institute').style.display = "none";
+                document.getElementById('sub_menu_research').style.display = "none";
+                document.getElementById('sub_menu_admissions').style.display = "block";
+                document.getElementById('sub_menu_people').style.display = "none";
+    document.getElementById('sub_menu_campuslife').style.display = "none";
+
+                 document.getElementById('main_institute').style.background = "none";
+                    document.getElementById('main_acads').style.background = "none";
+                    document.getElementById('main_admissions').style.background = "#EFF5FF";
+                        document.getElementById('main_research').style.background = "none";
+                        document.getElementById('main_people').style.background = "none";
+		document.getElementById('main_campuslife').style.background = "none";
+  //  document.getElementById('mImg').src="/themes/iiit-july-1/homePage/images/mImg3.jpg";
+		document.getElementById('main_acads').style.color = "black";
+    document.getElementById('main_media').style.background = "none";
+
+	}
+	 else if (menuName == "research")
+        {
+                document.getElementById('sub_menu_acads').style.display= "none";
+                document.getElementById('sub_menu_institute').style.display = "none";
+                document.getElementById('sub_menu_research').style.display = "block";
+                document.getElementById('sub_menu_admissions').style.display = "none";
+                document.getElementById('sub_menu_people').style.display = "none";
+    document.getElementById('sub_menu_campuslife').style.display = "none";
+
+                 document.getElementById('main_institute').style.background = "none";
+                    document.getElementById('main_acads').style.background = "none";
+                    document.getElementById('main_admissions').style.background = "none";
+                        document.getElementById('main_research').style.background = "#EFF5FF";
+                        document.getElementById('main_people').style.background = "none";
+		document.getElementById('main_campuslife').style.background = "none";
+//    document.getElementById('mImg').src="/themes/iiit-july-1/homePage/images/mImg4.jpg";
+		document.getElementById('main_research').style.color = "black";
+    document.getElementById('main_media').style.background = "none";
+
+        }
+	 else if (menuName == "people")
+        {
+                document.getElementById('sub_menu_acads').style.display= "none";
+                document.getElementById('sub_menu_institute').style.display = "none";
+                document.getElementById('sub_menu_research').style.display = "none";
+                document.getElementById('sub_menu_admissions').style.display = "none";
+                document.getElementById('sub_menu_people').style.display = "block";
+    document.getElementById('sub_menu_campuslife').style.display = "none";
+
+                 document.getElementById('main_institute').style.background = "none";
+                    document.getElementById('main_acads').style.background = "none";
+                    document.getElementById('main_admissions').style.background = "none";
+                    document.getElementById('main_research').style.background = "none";
+                    document.getElementById('main_people').style.background = "#EFF5FF";
+                    document.getElementById('main_campuslife').style.background = "none";
+    document.getElementById('main_media').style.background = "none";
+  //  document.getElementById('mImg').src="/themes/iiit-july-1/homePage/images/mImg5.jpg";
+		document.getElementById('main_people').style.color = "black";
+
+        }
+
+
+   else if (menuName == "campuslife")
+   {
+     document.getElementById('sub_menu_acads').style.display= "none";
+     document.getElementById('sub_menu_institute').style.display = "none";
+     document.getElementById('sub_menu_research').style.display = "none";
+     document.getElementById('sub_menu_admissions').style.display = "none";
+     document.getElementById('sub_menu_people').style.display = "none";
+     document.getElementById('sub_menu_campuslife').style.display = "block";
+
+     document.getElementById('main_institute').style.background = "none";
+     document.getElementById('main_acads').style.background = "none";
+     document.getElementById('main_admissions').style.background = "none";
+     document.getElementById('main_research').style.background = "none";
+     document.getElementById('main_people').style.background = "none";
+     document.getElementById('main_campuslife').style.background = "#EFF5FF";
+    document.getElementById('main_media').style.background = "none";
+    //document.getElementById('mImg').src="/themes/iiit-july-1/homePage/images/mImg6.jpg";
+		document.getElementById('main_campuslife').style.color = "black";
+
+   }
+else if (menuName == "media")
+   {
+     document.getElementById('sub_menu_acads').style.display= "none";
+     document.getElementById('sub_menu_institute').style.display = "none";
+     document.getElementById('sub_menu_research').style.display = "none";
+     document.getElementById('sub_menu_admissions').style.display = "none";
+     document.getElementById('sub_menu_people').style.display = "none";
+     document.getElementById('sub_menu_campuslife').style.display = "none";
+
+     document.getElementById('main_institute').style.background = "none";
+     document.getElementById('main_acads').style.background = "none";
+     document.getElementById('main_admissions').style.background = "none";
+     document.getElementById('main_research').style.background = "none";
+     document.getElementById('main_people').style.background = "none";
+     document.getElementById('main_campuslife').style.background = "none";
+    document.getElementById('main_media').style.background = "#eff5ff";
+    //document.getElementById('mImg').src="/themes/iiit-july-1/homePage/images/mImg6.jpg";
+                document.getElementById('main_campuslife').style.color = "black";
+
+   }
+
+
+
+
+	
+    }
+    </script>
+  </head>
+
+
+    <body id=body> <!-- body -->
+     <div id=container> <!-- container -->
+            <div id=header_strip> <p class="rteright">
+</p><!--Font Size
+<span id="fontsmall" class="font" style="cursor: pointer; text-decoration: underline; font-size: 13px; color: rgb(0, 98, 160);">Decrease</span>
+<span id="fontnormal" class="font" style="cursor: pointer; text-decoration: underline; font-size: 13px; color: rgb(0, 98, 160);">Normal</span>
+<span id="fontsize" class="font" style="cursor: pointer; text-decoration: underline; font-size: 13px; color: rgb(0, 98, 160);">Increase</span>
+</p>-->
+</div>
+            <div id=header>
+              <div id=header_tree></div>
+            
+    <div id=header_search >
+		  <div id=search_box >
+     <form action="/search/node/" method="post" name="keys" >
+		  <input type="text" name="keys" value="" id="box" onFocus="if(this.value=='') {this.value='';}" onBlur="if(this.value=='') {this.value='';}">
+		  <input type=submit value="Search"  alt="" onfocus="if(this.blur)this.blur()" id=go_image />  	
+      </form>
+<!--<form action="http://search.iiit.ac.in/setooz/search.jsp" method="get" name="search" >
+<input type="text" name="query" value="" id="box" onFocus="if(this.value=='') {this.value='';}" onBlur="if(this.value=='') {this.value='';}">
+<input type=submit value="Search"  alt="" onfocus="if(this.blur)this.blur()" id=go_image /><br>
+<div style="text-align:right;"><font face="Arial" size="1">Powered BY <a href="http://www.setooz.com" title="Search">Setooz</a></font></div>
+</form>-->
+		 
+		  </div>
+</div>
+        </div>
+
+        <!--div id=full_name-->
+
+<div id=full_name_right>
+<b class="rtop">
+  <b class="r4">
+<!--</b> <b class="r2"></b> <b class="r3"></b> <b class="r4">--></b>
+</b>
+<!--content goes here -->
+<span id=full_text>
+<b>International Institute of Information Technology, Hyderabad</b>
+</span>
+</div> 
+
+<!--<div id=full_name_right>
+<b class="rtop">
+  <b class="r4">  -->
+<!--</b> <b class="r2"></b> <b class="r3"></b> <b class="r4">--></b>
+<!--</b> -->
+<!--content goes here -->
+<!--<span id=full_text>
+Accredited at Grade A by NAAC
+</span>
+</div> -->
+<!--/div-->
+
+        <div id=featured_main> <!-- featured_main -->
+        <div id=menu_main> <!-- menu_main -->
+<!--<b class="rtop">
+  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+</b>-->
+
+          <div id=top_menu > <!-- top_menu -->
+          <div id=top_menu_left></div>
+            <div id=menu_list>
+        
+            <a  class=mainmenu onfocus="if(this.blur)this.blur()"  onmouseover="showMenu('institute');" id=main_institute href="http://iiit.ac.in/institute/about" >Institute</a>
+            </div>
+    
+    
+            <div id=menu_list>
+              <a  class=mainmenu onfocus="if(this.blur)this.blur()"  onmouseover="showMenu('acads');"  id=main_acads href="http://iiit.ac.in/academics/programmes" >Academics </a>
+            </div>
+    
+    
+            <div id=menu_list>
+              <a  class=mainmenu  onfocus="if(this.blur)this.blur()"  onmouseover="showMenu('admissions');" id=main_admissions href="http://iiit.ac.in/admissions/2013" >Admissions </a>
+            </div>
+    
+    
+            <div id=menu_list>
+              <a  class=mainmenu onfocus="if(this.blur)this.blur()"  onmouseover="showMenu('research');" id=main_research href="http://iiit.ac.in/research/centers" >Research </a>
+            </div>
+    
+    
+            <div id=menu_list>
+              <a   class=mainmenu onfocus="if(this.blur)this.blur()"  onmouseover="showMenu('people');" id=main_people href="http://iiit.ac.in/people/faculty" >People </a>
+            </div>
+            <div id=menu_list>
+              <a  class=mainmenu  onfocus="if(this.blur)this.blur()"  onmouseover="showMenu('campuslife');" id=main_campuslife href="http://iiit.ac.in/studentscorner" >Students Corner</a>
+</div>
+            <div id=menu_list>
+              <a  class=mainmenu  onfocus="if(this.blur)this.blur()"   onmouseover="showMenu('media');" id=main_media href="http://iiit.ac.in/media" >Media</a>
+            </div>
+          </div> <!-- //top_menu -->
+          <div id=top_menu_right></div>
+</div>
+	<div id=sub_menu_bar>
+
+<div id="sub_menu_institute">
+                <ul>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/institute/about"><span id=menu>About IIIT-H</span></a></li>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/institute/governing_council">Governing Council</a></li>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/institute/quick-facts" >Quick Facts</a></li>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/institute/achievements" >Achievements</a></li>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/institute/awards" >Awards</a></li>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/institute/infrastructure" >Infrastructure</a></li>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/institute/disclosures" >Disclosures</a></li>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://web2py.iiit.ac.in/outreach/default/home" target=_blank>Outreach</a></li>
+               <!-- <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/Outreach/" target=_blank>Outreach</a></li>-->
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/institute/location" >Location</a></li>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/institute/image" >Photo gallery</a></li>
+              </ul>
+             </div>
+             <div id="sub_menu_acads">
+              <ul>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/academics/programmes/undergraduate" >Undergraduate</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/academics/programmes/postgraduate" >Postgraduate</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/academics/programmes/phd" >PhD</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/academics/programmes/part_time" >Part time</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/academics/programmes/post_bsc" >Post BSc</a></li>
+                <li><a onfocus="if(this.blur)this.blur()"  id=sub href="http://iiit.ac.in/academics/curriculum" >Curriculum </a></li>
+              </ul>
+              </div>
+              <div id="sub_menu_admissions">
+              <ul>
+                <li><a onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/admissions/undergraduate" >Undergraduate</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/admissions/postgraduate/regularpg" >Postgraduate</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/admissions/undergraduate/lateral" >Lateral Entry</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/admissions/pgee" >PGEE 2013</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/admissions/postgraduate/postbsc" >Post B.Sc</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/academics/programmes/part_time" >Part-time</a></li>
+              </ul>
+              </div>
+              <div id="sub_menu_research">
+              <ul>
+                <li><a onfocus="if(this.blur)this.blur()"  id=sub href="http://iiit.ac.in/research/centers" >Centers </a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://web2py.iiit.ac.in/research_centres/publications/" >Publications</a></li>
+                <li><a  target=_blank onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/randd/" >R&D Showcase</a></li>
+                <li><a  target=_blank onfocus="if(this.blur)this.blur()" id=sub href="http://www.iiit.ac.in/exor2011/" >ExOR</a></li>
+              </ul>
+              </div>
+              <div id="sub_menu_people">
+              <ul>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/people/faculty" >Faculty</a></li>
+                <!--li><a  onfocus="if(this.blur)this.blur()" id=sub href="/studentscorner/students" >Students</a></li-->
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/people/alumni" >Alumni</a></li>
+                <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/people/staff" >Staff</a></li>
+              </ul>
+              </div>
+
+<div id="sub_menu_campuslife">
+              <ul>
+              <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/content/students_attendance" >Student Attendance</a></li>
+              <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/studentscorner/campus-life" >Campus Life</a></li>
+              <!--li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/studentscorner/students" >Students</a></li-->
+              <li><a  onfocus="if(this.blur)this.blur()" id=sub href="http://iiit.ac.in/studentscorner/clubs" >Clubs</a></li>
+              </ul>
+              </div>
+
+
+            </div>
+         
+
+	
+
+            <div id=featured_main_image>
+<!--<a href="http://iiit.ac.in/admissions/undergraduate" >-->
+<img id=mImg src="themes/iiit-july-1/homePage/images/mImg1.jpg"></img>
+<!--</a>-->
+</div>
+	</div> <!-- //featured_main -->
+
+    
+        <div id=content_below> <!-- content_below -->
+          <div id=quick_links >
+            <span id=quick_links_title>Quick Links</span>
+            <ul>
+              <li><a  href="http://iiit.ac.in/#" >Distinguished Lectures</a>
+              <li><a href="http://iiit.ac.in/#" >UG Admissions</a>
+              <li><a href="http://iiit.ac.in/#" >PGEEE 2008</a>
+              <li><a href="http://iiit.ac.in/#" >Research Centers</a>
+              <li><a href="http://iiit.ac.in/#" >Student Activities</a>
+	      <li><a href="http://felicity.iiit.ac.in/" >Felicity </a>
+              <li><a href="http://iiit.ac.in/#" >Faculty Openings</a>
+	      <li><a href="http://iiit.ac.in/#" > </a>
+              <li><a href="http://iiit.ac.in/#" > </a>
+            </ul>
+          </div>
+          <div id=featured_research > <!-- feature_research -->
+
+
+
+<!-- Added for slider -->
+<!--
+<div id="wrapper">
+
+        <div id="example">
+            <div class="bx-wrapper" style="width: 400px; position: relative;"><div class="bx-window" style="position: relative; overflow: hidden; width: 400px;"><ul style="width: 999999px; position: relative; left: -1920px;" id="slider1">
+
+
+                        <li class="pager" style="width: 400px; float: left; list-style: none outside none;">
+                      <a href="http://www.iiit.ac.in/admissions/2012"><img src="/themes/iiit-july-1/slider/adm-2012.jpg" width="362" height="46"></a> </li>  -->
+                <!--  <a href="http://www.iiit.ac.in/admissions/undergraduate/ug2011fpage"><h3>UnderGraduate Admission 2011 AIEEE only</span></h3></a>                    <p>Details for the undergraduate admissions here.</p> -->
+<!--                        <div class="clear"></div>
+                </li>
+                <li class="pager" style="width: 400px; float: left; list-style: none outside none;">
+                      <a href="http://www.iiit.ac.in/admissions/undergraduate/ntsekvpyselected"><img src="/themes/iiit-july-1/slider/ug_ntse_kvpy.jpg" width="362" height="46"></a>
+                        <div class="clear"></div>
+</li>
+
+
+                <li class="pager" style="width: 400px; float: left; list-style: none outside none;">
+                     <a href="http://www.iiit.ac.in/admissions/undergraduate/ug_interview_results"><img src="/themes/iiit-july-1/slider/ug_interview_results.jpg" width="362" height="46"></a> -->
+              <!--          <a href="http://www.iiit.ac.in/admissions/undergraduate/ug2011fpage"> <h3>Undergraduate Admissions 2011 Entrance Exam + Interview</h3></a>
+                        <p>Portal info about the Post Graduate Application  here.</p> -->
+<!--                        <div class="clear"></div>
+                </li>
+              
+                <li class="pager" style="width: 400px; float: left; list-style: none outside none;">
+                     <a href="http://www.iiit.ac.in/admissions/postgraduate/pgeeresults2011"><img src="/themes/iiit-july-1/slider/pgee_interview_results.jpg" width="362" height="46"></a>  -->
+              <!--          <a href="http://www.iiit.ac.in/admissions/undergraduate/ug2011fpage"> <h3>Undergraduate Admissions 2011 Entrance Exam + Interview</h3></a>
+                        <p>Portal info about the Post Graduate Application  here.</p> -->
+<!--                        <div class="clear"></div>
+                </li>
+
+                        <li style="width: 400px; float: left; list-style: none outside none;">
+                      <a href="http://www.iiit.ac.in/admissions/undergraduate/phaseII"><img src="/themes/iiit-july-1/slider/ug_phase2_procedure.jpg" width="362" height="46"></a>  -->
+                <!--  <a href="http://www.iiit.ac.in/admissions/undergraduate/ug2011fpage"><h3>UnderGraduate Admission 2011 AIEEE only</span></h3></a>                    <p>Details for the undergraduate admissions here.</p> -->
+<!--                        <div class="clear"></div>
+                </li>
+               <li class="pager" style="width: 400px; float: left; list-style: none outside none;">
+                      <a href="http://www.iiit.ac.in/admissions/undergraduate/interview_procedure"><img src="/themes/iiit-july-1/slider/ug_interview_phase2.jpg" width="362" height="46"></a> -->
+       <!-- <a href="http://www.iiit.ac.in/admissions/undergraduate/ug2011fpage"><h3>Undergraduate Admissions 2011 AIEEE + Interview</span></h3></a>
+                      < <p>Details for the undergraduate Application portal here.</p>-->
+<!--                        <div class="clear"></div>
+                </li>
+                <li class="pager" style="width: 400px; float: left; list-style: none outside none;">
+                     <a href="http://www.iiit.ac.in/admissions/undergraduate/ug2011fpage"><img src="/themes/iiit-july-1/slider/ug_phase1.jpg" width="362" height="46"></a>   -->
+<!--                        <a href="http://www.iiit.ac.in/admissions/undergraduate/ug2011fpage"> <h3>Undergraduate Admissions 2011 DASA </h3></a>
+                        <p>Details regarding research info.</p> -->
+<!--                        <div class="clear"></div>
+                </li>
+                <li class="pager" style="width: 400px; float: left; list-style: none outside none;">
+                      <a href="http://forum.iiit.ac.in/"><img src="/themes/iiit-july-1/slider/forum.jpg" width="362" height="46"></a>
+                        <div class="clear"></div>
+</li>  -->
+              <!--  <li class="pager" style="width: 400px; float: left; list-style: none outside none;">
+                      <a href="http://admissions.iiit.ac.in/PGEE/interview/portal/pgadmin_login.php"><img src="/themes/iiit-july-1/slider/pgee.jpg" width="362" height="46"></a>
+                        <div class="clear"></div>
+</li> -->
+<!--                       <a href="http://www.iiit.ac.in/admissions/undergraduate/ug2011fpage"><h3>Undergraduate Admissions 2011 through NTSE, KVPY and Olympiads</h3></a>
+                        <p>More about Placements in IIIT .</p> -->
+          <!--         </ul>
+                    </div>
+                    </div>  
+
+      </div>  --> <!-- end example -->
+
+  <!-- </div> --> <!-- end wrapper -->
+
+
+<!-- end of slider changes -->
+<span id=featured_research_title>
+    <span style="font-size:14px">
+        <a onfocus="if(this.blur)this.blur()" href="http://iiit.ac.in/admissions/2013">
+Latest News
+             <span style="font-weight:normal">
+                  <span style="vertical-align:super;font-size:10px"></span>
+             </span>
+        </a>
+    </span>
+</span>
+
+
+<!--  <span id=featured_research_title> <a onfocus="if(this.blur)this.blur()" href="http://iiit.ac.in/research/featured-research">B.Tech Admissions 2010</a></span>-->
+
+			<div id=featured_research_content>
+                <div id=featured_research_text>
+ <div id=featured_research_text>
+            <table id=featured_research border=0>
+            <tr><td id=image>
+           <img id=featured_research_image   src="/files/featured_research/avtars/DSC_0235.jpg" > </td>
+<td>
+<p>&nbsp;</p><h1><a href="http://admissions.iiit.ac.in/research_admissions">Winter Research Admissions-Spring 2014</a></h1><p>&nbsp;</p><h1><a href="/files/iiit/Project_Advertisement_IIIT.pdf">Project opening in Robotics Research Center</a></h1><p>&nbsp;</p><h1><a href="http://www.iiit.ac.in/academics/programmes/pgssp">PGSSP&nbsp;Admissions-Spring 2014</a></h1><span id=featured_research_text_faculty>
+<br>
+<!--<a id=more href="http://www.iiit.ac.in/news/notice/directadm">Direct admissions of students from Abroad</a>, <a id=more href="http://www.iiit.ac.in/news/notice/directolympiad">Direct admissions from olympiad, NTSE and KVPY</a>-->
+</span>
+</td>
+</tr>
+</table>
+</div>
+<div id=featured_research_more >
+
+
+
+
+
+
+
+<!--
+<a href=# id=more ><img id=arrow src="/themes/iiit-july-1/homePage/images/arrow.gif" >More</a> -->
+</div>
+            </div>
+			</div>
+          </div> <!-- //feature_research -->
+          
+          <!--div id=news>--> <!-- news -->
+            <div id=news >
+              <ul class="tabs">
+                <li id=news_tab class="active"><a href="javascript:void(0);" onmouseover="ShowTabContent('1');"><span>News</span></a></li>
+                <li id=events_tab class=""><a href="javascript:void(0);" onmouseover="ShowTabContent('2');"><span>Events</span></a></li>
+                <li id=notice_tab class=""><a href="javascript:void(0);" onmouseover="ShowTabContent('3');"><span>Notice</span></a></li>
+                <li id=fop_tab class=""><a href="javascript:void(0);" onmouseover="ShowTabContent('4');"><span>Careers</span></a></li>
+              </ul>
+            <div id=tab_content></div>
+            </div>
+            
+            <script type="text/javascript">
+              ShowTabContent("1");
+            </script>
+            <!--/div>--> <!-- //news -->
+        </div> <!-- //content_below -->
+<!--   
+     <div id=footer>          <div id=footer_address>
+          </div> -->
+<div id=footer>
+          <div id=footer_menu>
+            <a href="http://iiit.ac.in/" >Home</a>
+            &nbsp <b> | </b>  &nbsp
+            <a href="http://iiit.ac.in/institute/about" >Institute</a>
+            &nbsp <b> | </b>  &nbsp 
+            <a href="http://iiit.ac.in/academics/programmes" >Academics</a>
+            &nbsp <b> | </b>  &nbsp 
+            <a href="http://iiit.ac.in/admissions/2013" >Admissions</a>
+            &nbsp <b> | </b>  &nbsp 
+            <a href="http://iiit.ac.in/research/centers" >Research</a>
+            &nbsp <b> | </b>  &nbsp
+            <a href="http://iiit.ac.in/people/faculty" >People</a>
+            &nbsp <b> | </b>  &nbsp 
+	    <a href="http://iiit.ac.in/placements/placement2014" >Placement</a>
+            &nbsp <b> | </b>  &nbsp
+            <a href="http://iiit.ac.in/studentscorner" >Students Corner</a>
+            &nbsp <b> | </b>  &nbsp 
+            <!--<a href="/sitemap" >Sitemap</a>
+            &nbsp <b> | </b>  &nbsp 
+            <a href="/credits" >Credits</a>
+            &nbsp <b> | </b>  &nbsp -->
+            <a href="http://iiit.ac.in/contact/contact" >Contact</a>
+</div>
+<b class="rbottom">
+  <b class="r4"></b>
+<!-- <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>-->
+</b>
+<br>Copyright 2013, IIIT Hyderabad. All Rights Reserved 
+          </div>
+     <!--   </div> --> 
+<!-- //footer -->
+        </div>
+      </div> <!-- //container -->
+    </body> <!-- //body -->
+
+</html>

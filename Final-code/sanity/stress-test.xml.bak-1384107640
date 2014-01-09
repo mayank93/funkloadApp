@@ -1,0 +1,2 @@
+<response cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity" step="001" number="001" type="get" result="Successful" url="/index.html" code="200" description="Get url" time="1384107640.07" duration="0.00172901153564" />
+<testResult cycle="001" cvus="000" thread="001" suite="Sanity" name="test_sanity"  time="1384107640.07" result="Successful" steps="1" duration="0.00304102897644" connection_duration="0.00172901153564" requests="1" pages="1" xmlrpc="0" redirects="0" images="0" links="0" />
